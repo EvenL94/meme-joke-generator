@@ -11,3 +11,22 @@ export function emptyContentSet(set: { [key: string]: string }): {
 
   return newObj;
 }
+
+export function replaceScripts(
+  replacements: { [key: string]: string },
+  content: { [key: string]: string },
+  scripts: string
+): string {
+  let result = scripts;
+
+  for (const key in replacements) {
+    if (replacements.hasOwnProperty(key)) {
+      const placeholder = `\\(${key}\\)`;
+      const value = replacements[key] === "" ? content[key] : replacements[key];
+
+      result = result.replace(new RegExp(placeholder, "g"), value);
+    }
+  }
+
+  return result;
+}
