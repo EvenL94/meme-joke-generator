@@ -2,10 +2,12 @@
 
 import React, { useState } from "react";
 import GeneratorWhw from "./components/generators/GeneratorWhw";
+import GeneratorGi from "./components/generators/GeneratorGi";
 
 export default function Home() {
   const componentMap = new Map<string, JSX.Element>([
     ["whw", <GeneratorWhw />],
+    ["gi", <GeneratorGi />],
   ]);
 
   const [selectedComponentKey, setSelectedComponentKey] =
@@ -19,8 +21,8 @@ export default function Home() {
     <div>
       <select value={selectedComponentKey} onChange={handleSelectChange}>
         <option value="whw">"我是来玩梗的，你们要干什么!"</option>
-        {/* <option value="B">Component B</option>
-        <option value="C">Component C</option> */}
+        <option value="gi">你说的对，但是</option>
+        {/* <option value="C">Component C</option> */}
       </select>
 
       <div>{componentMap.get(selectedComponentKey)}</div>
