@@ -2,7 +2,7 @@
 
 <sub><del>沟槽的公式还在追我！</del></sub>
 
-点这里：[传送门](https://evenl94.github.io/meme-joke-generator/F)
+点这里：[传送门](https://evenl94.github.io/meme-joke-generator/)
 
 目前仅支持简体中文喵~
 
