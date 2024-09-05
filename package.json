@@ -1,10 +1,11 @@
 {
   "name": "meme-joke-generator",
   "version": "0.1.0",
+  "homepage": "https://evenl94.github.io/meme-joke-generator",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
