@@ -1,20 +1,29 @@
 "use client";
 
 import React, { useState } from "react";
-import GeneratorWhw from "./components/GeneratorWhw";
+import GeneratorWhw from "./components/generators/GeneratorWhw";
 
 export default function Home() {
-  // const [val, setVal] = useState("");
-  // const handleChangeVal = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setVal(event.target.value);
-  // };
+  const componentMap = new Map<string, JSX.Element>([
+    ["whw", <GeneratorWhw />],
+  ]);
+
+  const [selectedComponentKey, setSelectedComponentKey] =
+    useState<string>("whw");
+
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedComponentKey(event.target.value);
+  };
+
   return (
     <div>
-      <p> HOME</p>
-      {/* <GeneratorFactory genContent={generators[0]} /> */}
-      <GeneratorWhw />
-      {/* <input placeholder="input 1" value={val} onChange={handleChangeVal} />
-      <input placeholder="input 2" value={val} onChange={handleChangeVal} /> */}
+      <select value={selectedComponentKey} onChange={handleSelectChange}>
+        <option value="whw">"我是来玩梗的，你们要干什么!"</option>
+        {/* <option value="B">Component B</option>
+        <option value="C">Component C</option> */}
+      </select>
+
+      <div>{componentMap.get(selectedComponentKey)}</div>
     </div>
   );
 }

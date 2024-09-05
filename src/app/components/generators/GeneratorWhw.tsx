@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { emptyContentSet, replaceScripts } from "@/app/functions";
-import TextReplacement from "./TextReplacement";
+import TextReplacement from "../TextReplacement";
 
 const GeneratorFactory: React.FC = ({}) => {
   const contents: { [key: string]: string } = {
