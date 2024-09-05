@@ -6,7 +6,7 @@ interface copyToClipboardProp {
   toCopy: string;
 }
 
-const copyToClipboard: React.FC<copyToClipboardProp> = ({ toCopy }) => {
+const CopyToClipboard: React.FC<copyToClipboardProp> = ({ toCopy }) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const copyToClipboard = (toCopy: string) => {
@@ -49,4 +49,4 @@ const copyToClipboard: React.FC<copyToClipboardProp> = ({ toCopy }) => {
   );
 };
 
-export default copyToClipboard;
+export default CopyToClipboard;

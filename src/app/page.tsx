@@ -5,10 +5,30 @@ import * as Generators from "./components/generators";
 
 export default function Home() {
   const componentMap = new Map<string, JSX.Element>([
-    ["whw", <Generators.Whw />],
-    ["gi", <Generators.Gi />],
-    ["lfy", <Generators.Lfy />],
-    ["hhk", <Generators.Hhk />],
+    [
+      "whw",
+      <div key="whw">
+        <Generators.Whw />
+      </div>,
+    ],
+    [
+      "gi",
+      <div key="gi">
+        <Generators.Gi />
+      </div>,
+    ],
+    [
+      "lfy",
+      <div key="lfy">
+        <Generators.Lfy />
+      </div>,
+    ],
+    [
+      "hhk",
+      <div key="hhk">
+        <Generators.Hhk />
+      </div>,
+    ],
   ]);
 
   const [selectedComponentKey, setSelectedComponentKey] =

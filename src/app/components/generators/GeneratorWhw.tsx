@@ -124,14 +124,14 @@ const GeneratorWhw: React.FC = ({}) => {
             replacements={replacements}
             onChange={handleChange}
           />
-          惊慌失措，一边大声说“我是来
+          惊慌失措，一边大声说&quot;我是来
           <TextReplacement
             label="act"
             contents={contents}
             replacements={replacements}
             onChange={handleChange}
           />
-          的，你们要干什么?" 一边拳打脚踢，拼命进行反抗。
+          的，你们要干什么?&quot; 一边拳打脚踢，拼命进行反抗。
         </p>
         <p>
           <TextReplacement
