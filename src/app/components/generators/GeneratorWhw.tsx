@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 import { emptyContentSet, replaceScripts } from "@/app/functions";
 import TextReplacement from "../TextReplacement";
+import CopyToClipboard from "../CopyToClipboard";
 
-const GeneratorFactory: React.FC = ({}) => {
+const GeneratorWhw: React.FC = ({}) => {
   const contents: { [key: string]: string } = {
     charA: "人物A",
     charB: "人物B",
@@ -35,26 +36,11 @@ const GeneratorFactory: React.FC = ({}) => {
     setReplacements((prev) => ({ ...prev, [label]: event.target.value }));
   };
 
-  const copyToClipboard = (toCopy: string) => {
-    navigator.clipboard.writeText(toCopy).then(
-      () => {
-        console.log("Text copied to clipboard");
-      },
-      (err) => {
-        console.error("Failed to copy text: ", err);
-      }
-    );
-  };
-
   return (
     <div>
-      <button
-        onClick={() =>
-          copyToClipboard(replaceScripts(replacements, contents, scripts))
-        }
-      >
-        Copy to Clipboard
-      </button>
+      <CopyToClipboard
+        toCopy={replaceScripts(replacements, contents, scripts)}
+      />
       <div>
         <p>
           <TextReplacement
@@ -324,7 +310,7 @@ const GeneratorFactory: React.FC = ({}) => {
   );
 };
 
-export default GeneratorFactory;
+export default GeneratorWhw;
 
 // (人物A)是第一个被抓的，当时(人物A)接到通知要讨论(事件/事情)，他刚进(地点)时，他的(某物)即被留在门外。
 // ( 人物A)感到事情有些不大对头，但也没在意。当他快走进(地点)时，专门对付他的(人物C)立即走了过来。
