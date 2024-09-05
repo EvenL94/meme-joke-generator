@@ -3,13 +3,15 @@
 import React, { useState } from "react";
 import GeneratorWhw from "./components/generators/GeneratorWhw";
 import GeneratorGi from "./components/generators/GeneratorGi";
-import GeneratorLfy from "./components/generators/GenerartorLfy";
+import GeneratorLfy from "./components/generators/GeneratorLfy";
+import GeneratorHhk from "./components/generators/GeneratorHHK";
 
 export default function Home() {
   const componentMap = new Map<string, JSX.Element>([
     ["whw", <GeneratorWhw />],
     ["gi", <GeneratorGi />],
     ["lfy", <GeneratorLfy />],
+    ["hhk", <GeneratorHhk />],
   ]);
 
   const [selectedComponentKey, setSelectedComponentKey] =
@@ -37,7 +39,10 @@ export default function Home() {
                 你说的对，但是
               </option>
               <option className="bg-white text-gray-700" value="lfy">
-                “老佛爷您的马死了”
+                "老佛爷您的马死了"
+              </option>
+              <option className="bg-white text-gray-700" value="hhk">
+                "为什么要演奏春日影?!"
               </option>
             </select>
           </div>

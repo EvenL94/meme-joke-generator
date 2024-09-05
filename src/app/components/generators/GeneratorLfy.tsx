@@ -29,40 +29,43 @@ const GeneratorLfy: React.FC = ({}) => {
       <CopyToClipboard
         toCopy={replaceScripts(replacements, contents, scripts)}
       />
-      <p>
-        清朝时期, 
-        <TextReplacement
-          label="charA"
-          contents={contents}
-          replacements={replacements}
-          onChange={handleChange}
-        />
-        陪慈禧太后下象棋。突然
-        <TextReplacement
-          label="charA"
-          contents={contents}
-          replacements={replacements}
-          onChange={handleChange}
-        />
-        有了一步妙棋, 得意之下, 脱口而出了一句：“老佛爷, 我杀你的马”。
-      </p>
-      <p>
-        这话一出口, 其他人都吓得脸色苍白。慈禧也是勃然大怒, 说道“你杀我的马, 我杀你全家”。说完, 慈禧就让人将
-        <TextReplacement
-          label="charA"
-          contents={contents}
-          replacements={replacements}
-          onChange={handleChange}
-        />
-        拉出去
-        <TextReplacement
-          label="exe"
-          contents={contents}
-          replacements={replacements}
-          onChange={handleChange}
-        />
-        了, 又灭了他的全家。
-      </p>
+      <div>
+        <p>
+          清朝时期,
+          <TextReplacement
+            label="charA"
+            contents={contents}
+            replacements={replacements}
+            onChange={handleChange}
+          />
+          陪慈禧太后下象棋。突然
+          <TextReplacement
+            label="charA"
+            contents={contents}
+            replacements={replacements}
+            onChange={handleChange}
+          />
+          有了一步妙棋, 得意之下, 脱口而出了一句：“老佛爷, 我杀你的马”。
+        </p>
+        <p>
+          这话一出口, 其他人都吓得脸色苍白。慈禧也是勃然大怒, 说道“你杀我的马,
+          我杀你全家”。说完, 慈禧就让人将
+          <TextReplacement
+            label="charA"
+            contents={contents}
+            replacements={replacements}
+            onChange={handleChange}
+          />
+          拉出去
+          <TextReplacement
+            label="exe"
+            contents={contents}
+            replacements={replacements}
+            onChange={handleChange}
+          />
+          了, 又灭了他的全家。
+        </p>
+      </div>
     </div>
   );
 };
