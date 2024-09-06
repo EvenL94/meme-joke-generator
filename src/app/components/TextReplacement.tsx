@@ -15,7 +15,7 @@ const TextReplacement: React.FC<TextReplacementProps> = ({
 }) => {
   return (
     <input
-      className="w-16 outline-none hover:bg-blue-100 text-center placeholder:text-center underline underline-offset-1"
+      className="w-20 outline-none hover:bg-blue-100 text-center placeholder:text-center underline underline-offset-1"
       placeholder={contents[label]}
       value={replacements[label]}
       onChange={(event) => {
