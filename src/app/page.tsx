@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import * as Generators from "./components/generators";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const componentMap = new Map<string, JSX.Element>([
@@ -89,6 +90,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }
