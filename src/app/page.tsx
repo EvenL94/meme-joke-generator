@@ -29,6 +29,18 @@ export default function Home() {
         <Generators.Hhk />
       </div>,
     ],
+    [
+      "mc",
+      <div key="mc">
+        <Generators.Mc />
+      </div>,
+    ],
+    [
+      "cks",
+      <div key="cks">
+        <Generators.Cks />
+      </div>,
+    ],
   ]);
 
   const [selectedComponentKey, setSelectedComponentKey] =
@@ -63,6 +75,12 @@ export default function Home() {
               </option>
               <option className="bg-white text-gray-700" value="hhk">
                 为什么要演奏春日影?!
+              </option>
+              <option className="bg-white text-gray-700" value="mc">
+                玩梗是这样的
+              </option>
+              <option className="bg-white text-gray-700" value="cks">
+                优势在我
               </option>
             </select>
           </div>
