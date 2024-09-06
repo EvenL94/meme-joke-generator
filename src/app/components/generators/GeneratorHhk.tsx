@@ -5,6 +5,7 @@ import { emptyContentSet, replaceScripts } from "@/app/functions";
 import TextReplacement from "../TextReplacement";
 import CopyToClipboard from "../CopyToClipboard";
 
+// hhk for haru hikage
 const GeneratorHhk: React.FC = ({}) => {
   const contents: { [key: string]: string } = {
     charA: "人物A",

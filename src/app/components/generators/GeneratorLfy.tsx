@@ -5,6 +5,7 @@ import { emptyContentSet, replaceScripts } from "@/app/functions";
 import TextReplacement from "../TextReplacement";
 import CopyToClipboard from "../CopyToClipboard";
 
+// lfy for lao fo ye
 const GeneratorLfy: React.FC = ({}) => {
   const contents: { [key: string]: string } = {
     charA: "人物A",

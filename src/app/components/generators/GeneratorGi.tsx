@@ -5,6 +5,7 @@ import { emptyContentSet, replaceScripts } from "@/app/functions";
 import TextReplacement from "../TextReplacement";
 import CopyToClipboard from "../CopyToClipboard";
 
+// gi for genshin impact
 const GeneratorGi: React.FC = ({}) => {
   const contents: { [key: string]: string } = {
     title: "某作品",
