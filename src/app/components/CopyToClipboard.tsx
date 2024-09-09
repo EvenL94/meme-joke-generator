@@ -22,7 +22,7 @@ const CopyToClipboard: React.FC<copyToClipboardProp> = ({ toCopy }) => {
   };
 
   return (
-    <div className="flex items-center relative bg-blue-100 text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 xl:text-base text-xs font-sans justify-between rounded-t-md">
+    <div className="flex items-center relative border-b border-b-gray-500 text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 xl:text-base text-xs font-sans justify-between rounded-t-md">
       <span>点击选框输入内容</span>
       <button
         onClick={() => copyToClipboard(toCopy)}
